@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import * as Font from 'expo-font'
 import { AppLoading } from 'expo'
 
+import StackNavigator from './routes/homeStack'
+
 import Home from './screens/Home'
 
 const getFonts = () => {
@@ -11,15 +13,14 @@ const getFonts = () => {
   })
 }
 
-export default function App() {
+const App = () => {
   const [fontsLoaded, setFontsLoaded] = useState(false)
 
 
   if (fontsLoaded){
     return (
-      <Home />
-    );
-
+      <StackNavigator />
+    )
   } else {
     return (
       <AppLoading
@@ -30,3 +31,5 @@ export default function App() {
   }
 
 }
+
+export default App
