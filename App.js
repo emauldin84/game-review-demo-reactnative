@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import * as Font from 'expo-font'
 import { AppLoading } from 'expo'
 
-import StackNavigator from './routes/homeStack'
+import StackNavigator from './routes/drawer'
 
 import Home from './screens/Home'
 
