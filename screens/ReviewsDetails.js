@@ -12,11 +12,10 @@ const ReviewDetails = ({navigation, route}) => {
     // }
 
     return (
-        <View style={globalStyles.container} key={route.params.key}>
+        <View style={globalStyles.container}>
             <Text>{route.params.title}</Text>
             <Text>{route.params.body}</Text>
             <Text>{route.params.rating}</Text>
-
         </View>
     )
 }
