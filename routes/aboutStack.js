@@ -23,9 +23,11 @@ const AboutStack = () => {
             <Stack.Screen 
                 name="About Game Review Demo" 
                 component={About}
-                options={{
-                    headerTitle: () => <Header />,
-                }} 
+                options= {({ navigation }) => {
+                    return {
+                        headerLeft: () => <Header navigation={navigation}/>,
+                    }
+                }}
             />
         </Stack.Navigator>
     )

@@ -23,8 +23,10 @@ const HomeStack = () => {
             <Stack.Screen 
                 name="Game Review Demo"
                 component={Home}
-                options={{
-                    headerTitle: () => <Header />,
+                options= {({ navigation }) => {
+                    return {
+                        headerLeft: () => <Header navigation={navigation}/>,
+                    }
                 }}
             />
             <Stack.Screen 
