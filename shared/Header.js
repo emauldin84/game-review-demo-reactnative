@@ -1,8 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 import { MaterialIcons } from '@expo/vector-icons'
 
-const Header = ({ navigation }) => {
+const Header = ({ navigation, title }) => {
 
     const openMenu = () => {
         navigation.openDrawer()
@@ -20,6 +20,16 @@ const styles = StyleSheet.create({
         left: 16,
         top: 5,
         color: '#444',
+    },
+    headerImage: {
+        width: 26,
+        height: 26,
+    },
+    headerText: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        color: '#333',
+        letterSpacing: 1,
     }
 })
 

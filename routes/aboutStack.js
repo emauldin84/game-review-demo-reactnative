@@ -5,7 +5,8 @@ import { NavigationContainer } from '@react-navigation/native'
 
 import About from '../screens/About'
 import Header from '../shared/Header'
-
+import LogoTitle from '../shared/LogoTitle'
+import HeaderBackground from '../shared/HeaderBackground'
 
 const Stack = createStackNavigator()
 
@@ -22,11 +23,13 @@ const AboutStack = () => {
             }} 
         >
             <Stack.Screen 
-                name="About Game Review Demo" 
+                name="About" 
                 component={About}
                 options={({ navigation }) => {
                     return {
                         headerLeft: () => <Header navigation={navigation}/>,
+                        headerTitle: props => <LogoTitle {...props} />,
+                        headerBackground: props => <HeaderBackground {...props} />,
                     }
                 }}
             />
