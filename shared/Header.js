@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
     icon: {
         position: 'absolute',
         left: 16,
-        top: 5
+        top: 5,
+        color: '#444',
     }
 })
 

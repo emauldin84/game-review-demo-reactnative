@@ -18,6 +18,7 @@ const HomeStack = () => {
                     height: 60,
                 },
                 headerTintColor: '#444',
+                headerTitleAlign: 'center',
             }} 
         >
             <Stack.Screen 

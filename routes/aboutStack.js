@@ -18,12 +18,13 @@ const AboutStack = () => {
                     height: 60,
                 },
                 headerTintColor: '#444',
+                headerTitleAlign: 'center'
             }} 
         >
             <Stack.Screen 
                 name="About Game Review Demo" 
                 component={About}
-                options= {({ navigation }) => {
+                options={({ navigation }) => {
                     return {
                         headerLeft: () => <Header navigation={navigation}/>,
                     }
