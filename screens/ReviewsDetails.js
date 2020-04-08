@@ -20,7 +20,6 @@ const ReviewDetails = ({navigation, route}) => {
             <Card>
                 <Text>{route.params.title}</Text>
                 <Text>{route.params.body}</Text>
-                <Text>{route.params.rating}</Text>
                 <View style={styles.rating}>
                     <Text>Rating: </Text>
                     <Image source={images.ratings[rating]}/>

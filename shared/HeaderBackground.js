@@ -15,6 +15,11 @@ const styles = StyleSheet.create({
     imageContainer: {
         height: 70,
         elevation: 6,
+        backgroundColor: '#fff',
+        shadowOffset: { width: 1, height: 1 },
+        shadowColor: '#333',
+        shadowOpacity: 0.3,
+        shadowRadius: 2,
     },
     image: {
         height: 70,

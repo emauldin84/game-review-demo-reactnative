@@ -40,6 +40,7 @@ const HomeStack = () => {
                 options={{ 
                     headerTitle: props => <LogoTitle {...props} />,
                     headerBackground: props => <HeaderBackground {...props} />,
+                    headerBackTitleVisible: null
                 }}
             />
         </Stack.Navigator>
